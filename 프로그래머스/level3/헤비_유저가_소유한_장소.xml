@@ -1,0 +1,17 @@
+SELECT
+	id,
+	name,
+    host_id
+FROM
+	places
+WHERE
+	host_id IN(
+		SELECT
+			A.host_id FROM (
+				SELECT
+					host_id, count(host_id) AS cnt FROM places
+				GROUP BY
+					host_id
+				HAVING
+					cnt >= 2) A)
+ORDER BY id;
