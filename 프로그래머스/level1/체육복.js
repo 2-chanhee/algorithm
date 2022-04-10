@@ -1,7 +1,7 @@
 function solution(n, lost, reserve) {
   let count = 0;
 
-  // 정렬
+  // 정렬 (뒤의 숫자가 먼저 나오면 결과가 달라짐)
   lost = lost.sort((a, b) => a - b);
   reserve = reserve.sort((a, b) => a - b);
 
