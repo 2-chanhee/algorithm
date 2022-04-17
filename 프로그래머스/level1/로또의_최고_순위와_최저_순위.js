@@ -14,8 +14,10 @@ function solution(lottos, win_nums) {
     }
   }
 
-  let topRank = count === 0 && sumOfZero === 0 ? 6 : 7 - (sumOfZero + count);
-  let rowRank = count === 0 ? 6 : 7 - count;
+  // 0의 개수 + 0이 아닌 배열과 정답배열의 일치 개수, 0이 없고 전부 다 틀리면 topRank = 6
+  const topRank = count === 0 && sumOfZero === 0 ? 6 : 7 - (sumOfZero + count);
+  // 0은 틀리게 설정할거라 0은 제외, 0 제외 배열과 정답배열의 일치 개수, 전부 다 틀리면 rowRank = 6
+  const rowRank = count === 0 ? 6 : 7 - count;
 
   return [topRank, rowRank];
 }
