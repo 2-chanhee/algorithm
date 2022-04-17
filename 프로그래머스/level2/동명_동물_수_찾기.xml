@@ -1,6 +1,6 @@
 SELECT 
     NAME, 
     count(name) as COUNT 
-    from animal_ins 
-    group by NAME having 
-    count(NAME) >= 2 order by name
+from animal_ins 
+group by NAME having 
+count(NAME) >= 2 order by name
