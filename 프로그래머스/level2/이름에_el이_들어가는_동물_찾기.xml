@@ -1,5 +1,6 @@
 SELECT 
-    ANIMAL_ID, 
-    NAME 
-from animal_ins 
-where name like '%el%' AND animal_type ='Dog' order by name
+    animal_id, 
+    name 
+FROM ANIMAL_INS 
+WHERE name like '%el%' AND animal_type ='Dog' 
+ORDER BY name
