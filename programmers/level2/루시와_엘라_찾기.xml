@@ -1,0 +1,7 @@
+SELECT 
+    animal_id, 
+    name, 
+    sex_upon_intake
+FROM ANIMAL_INS 
+    WHERE name = 'Lucy' OR name ='Pickle' OR name='Rogan' OR name= 'Sabrina' OR  name='Mitty' OR name='Ella'
+ORDER BY animal_id
