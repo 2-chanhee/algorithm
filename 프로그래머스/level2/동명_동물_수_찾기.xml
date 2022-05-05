@@ -1,7 +1,0 @@
-SELECT 
-    name, 
-    count(name) as COUNT 
-FROM ANIMAL_INS
-GROUP BY name 
-HAVING count(name) >= 2 
-ORDER BY name

@@ -1,7 +1,0 @@
-SELECT 
-    TO_CHAR(datetime, 'hh24') as hour, 
-    count(datetime) as count 
-FROM ANIMAL_OUTS 
-HAVING TO_CHAR(datetime, 'hh24') BETWEEN 9 AND 19
-GROUP BY TO_CHAR(datetime, 'hh24') 
-ORDER BY hour
