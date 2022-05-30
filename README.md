@@ -1,1 +1,1 @@
-### javascript algorithm  
+### javascript, typescript 
